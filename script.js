@@ -13,14 +13,16 @@ function Poga(){
 
 function render() {
     let biblioteka = document.getElementById('biblioteka');
+    biblioteka.innerHTML = "";
 
-    for(let i = 0; i < biblioteka.clientHeight; i++) {
+    for(let i = 0; i < preces.length; i++) {
+
         let prece = `
     <div class="prece">
-        <h3>Prece: dators</h3>
-        <h4>Daudzums: 5</h4>
+        <h3>Prece: ${preces[i].nosaukums}</h3>
+        <h4>Daudzums: ${preces[i].daudzums}</h4>
     </div>`;
-    biblioteka.innerHTML = prece;
+    biblioteka.innerHTML += prece;
     }
     
 }
