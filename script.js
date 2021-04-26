@@ -1,4 +1,11 @@
 let preces = []
+
+window.addEventListener('load', () => {
+    preces = JSON.parse(localStorage.getItem("preces") || "[]");
+    console.log(preces)
+    render();
+});
+
 document.getElementById("pievienotPreci").addEventListener('click', Poga)
 function Poga(){
     let prece = {nosaukums: nosaukums.value, daudzums: daudzums.value};
@@ -19,10 +26,10 @@ function render() {
 
         let prece = `
     <div class="prece">
-        <h3>Prece: ${preces[i].nosaukums}</h3>
-        <h4>Daudzums: ${preces[i].daudzums}</h4>
+        <h3>Prece: ${preces[i].nosaukums}</h3>⠀⠀⠀<h4>Daudzums: ${preces[i].daudzums}</h4>
     </div>`;
     biblioteka.innerHTML += prece;
     }
-    
+
+    localStorage.setItem("preces", JSON.stringify(preces)) 
 }
