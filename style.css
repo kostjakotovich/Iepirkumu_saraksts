@@ -42,7 +42,7 @@ h2 {
     border-radius: 10px;
     padding: 10px;
     height: 50px;
-    width: 300px;
+    width: 400px;
     margin: 15px;
     background-color: rgb(205, 255, 154);
     word-spacing: -2px;
@@ -52,4 +52,13 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.del{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(253, 255, 148);
+    height: 40px;
+    width: 60px;
+    padding: 10px;
 }
