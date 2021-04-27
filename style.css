@@ -48,7 +48,7 @@ h2 {
     word-spacing: -2px;
 }
 
-#biblioteka{
+#saraksts{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
